@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yui Arakawaの自己紹介とフリーランスとして撮影した写真を掲載しているサイトです。" />
+  <title>MyProfile</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+</head>
+
+<body>
+  <!-- ナビゲーションメニュー -->
+  <header>
+    <nav>
+      <div>
+        <a href="#index.html" class="home">My Profile</a>
+      </div>
+      <div class="menu">
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <!-- メイン画像 -->
+      <div>
+
+        <ul class="slider">
+          <li><img src="image/main1.png" alt="Camera" class="mainpic"></li>
+          <li><img src="image/main2.png" alt="機材一式" class="mainpic"></li>
+          <li><img src="image/main3.png" alt="海の撮影" class="mainpic"></li>
+        </ul>
+
+      </div>
+
+      <!-- About -->
+      <h1 id="about">About</h1>
+      <section class="about">
+        <img src="image/about.png" alt="Yui Arakawa" class="circle">
+        <div class="content">
+          <p class="name">Yui Arakawa</p>
+          <ul>
+            <li>29歳 長崎県長崎市出身</li>
+            <li>フォトウェディングのロケーション撮影に従事</li>
+            <li>趣味は旅行、愛機はCanon</li>
+            <li>四季を感じる自然の写真を撮るのが好き。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Works -->
+      <h1 id="works">Works</h1>
+      <section class="works">
+
+        <div class="item">
+          <a href=""><img src="image/works1.png" alt="フォトウェディング"></a>
+          <p>お二人の思い出の場所で、幸せな瞬間を撮影した1枚</p>
+        </div>
+
+        <!-- 左右に隙間を開けるために、"item_center"クラスを付与 -->
+        <div class="item item_center">
+          <a href=""><img src="image/works2.png" alt="紅葉している永観堂"></a>
+          <p>京都の永観堂で撮影した、紅葉が美しい風景</p>
+        </div>
+
+        <div class="item">
+          <a href=""><img src="image/works3.png" alt="青空に生える霧氷"></a>
+          <p>空の青さと地上の銀世界が幻想的で、忘れられない写真</p>
+        </div>
+
+      </section>
+    </article>
+  </main>
+  <!-- フッター -->
+  <footer>
+    <p>&copy; MyProfile. All rights reserved.</p>
+  </footer>
+
+  <!-- TOPに戻るボタン -->
+  <a href="#" id="page-top">TOP</a>
+
+  <!-- モーダル -->
+  <div class="modal">
+    <img src="" alt="" class="big-img">
+    <a href="" class="close-btn">✖</a>
+  </div>
+
+  <!-- jQueryをCDN経由で読み込む -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- slickをCDN経由で読み込む -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- JSファイルを読み込む-->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
